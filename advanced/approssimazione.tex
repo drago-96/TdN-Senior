@@ -15,10 +15,89 @@
 
 \section{Lezione}
 
+\subsection{Dirichlet} 
+
+\begin{theorem}
+    Siano $x_1,\dots,x_k$ reali e $\eps>0$. Esiste un intero $n$ e interi $p_1,\dots,p_k$ tali che $|nx_i-p_i|<\eps$.
+\end{theorem}
+
+\begin{esercizio}{PFTB 15.1.6}{}
+    Siano $x_1,x_2,\dots,x_{2n+1}$ numeri reali tali che per ogni $1\le i\le2n+1$ posso dividere in due gruppi gli $x_j$ con $j\neq i$ in modo che la somma dei due gruppi sia uguale. Dimostrare che tutti i numeri sono uguali.
+\end{esercizio}
+
+\subsection{Cose su $\{ n\alpha \}$}
+
+\begin{lemma}
+     Le potenze iniziano con cifre arbitrarie
+\end{lemma}
+
+\begin{esercizio}{PFTB 15.1.1}{}
+    Mostrare che la successione $\lfloor n\sqrt{2019}\rfloor$ contiene progressioni geometriche arbitrariamente lunghe con ragioni arbitrariamente grandi.
+\end{esercizio}
+
+\subsection{Teorema di Weyl}
+
+\begin{theorem}
+    Sia $a_n$ una successione in $[0,1]$. Le seguenti sono equivalenti:
+    \begin{enumerate}
+        \item Per ogni $0\le a\le b\le 1$ vale $$ \lim_{n\to\infty}\frac{\#\{ i\st 1\le i\le n, a_i\in[a,b] \}}{n} = b-a $$
+        \item Per ogni $f:[0,1]\to\R$ continua vale $$ \lim_{n\to\infty}\frac{1}{n}\sum_{i=1}^n f(a_i)=\int_0^1 f(x)\mathrm{d}x$$
+        \item Per ogni intero $r\ge1$ vale $$ \lim_{n\to\infty}\frac1n\sum_{k=1}^ne^{2i\pi r a_k} = 0 $$
+    \end{enumerate}
+    Se vale una di queste, la successione è \emph{equidistribuita}.
+\end{theorem}
+
+\begin{corollary}
+    La successione $\{ n\alpha \}$ è equidistribuita per $\alpha$ irrazionale.
+\end{corollary}
+
+\begin{corollary}
+    La densità degli interi $n$ per cui $a^n$ comincia con le cifre $M$ è $\ds\frac{\log(M+1)}{\log M}$.
+\end{corollary}
+
+\begin{theorem}
+    Se $f$ è un polinomio con coefficiente di testa irrazionale, allora la successione $f(n)$ è equidistribuita.
+\end{theorem}
+
+\begin{esercizio}{PFTB 15.2.5}{}
+    Nella successione $\lfloor n^2\sqrt{2019} \rfloor$ ci sono progressioni geometriche arbitrariamente lunghe.
+\end{esercizio}
+
+\subsection{Beatty}
+\begin{theorem}
+    Siano $r,s$ due irrazionali positivi tali che $\frac1r+\frac1s=1$. Allora le due successioni $\lfloor nr\rfloor$ e $\lfloor ns \rfloor$ partizionano $\N$.
+\end{theorem}
+
+\begin{esercizio}{PFTB 15.2.12}{}
+    Siano $a,b,c$ reali positivi. Mostrare che $\N$ non può essere partizionato nelle successioni $\lfloor na\rfloor$, $\lfloor nb\rfloor$, $\lfloor nc\rfloor$.
+\end{esercizio}
+
+
+
+
+
+
+
 \section{Esercizi singoli}
+
+\begin{esercizio}{IMOSL15 N1}{https://artofproblemsolving.com/community/c6h1268859p6622268}
+    Determinare tutti gli $M$ tali che la successione $a_0=M+\frac1 2$, $a_{k+1}=a_k\lfloor a_k\rfloor$ contenga almeno un intero.
+\end{esercizio}
 
 \begin{esercizio}{BMO15 4}{https://artofproblemsolving.com/community/c6h1085437p4794940}
     Dimostrare che per ogni $20$ interi consecutivi essite un $d$ tale che per ogni $n$ naturale vale la disuguaglianza $n\sqrt d\left\{ n\sqrt d \right\}>\frac 5 2$.
+\end{esercizio}
+
+\begin{esercizio}{PFTB 15.2.3}{}
+    Calcola $\ds\sup_{n\ge1}\left( \min_{p+q=n} |p-q\sqrt3| \right)$
+\end{esercizio}
+
+\begin{esercizio}{PFTB 15.2.11}{}
+    Siano $a,b$ reali tali che $\{na\}+\{nb\}<1$ per ogni $n$. Dimostra che almeno uno tra $a$ e $b$ è intero.
+\end{esercizio}
+
+\begin{esercizio}{IMOSL14 N8}{https://artofproblemsolving.com/community/c6h1113204p5083578}
+    Dimostrare che per ogni $a,b$ interi esiste un $p^k$ dispari tale che $\norm{\frac{a}{p^k}}+\norm{\frac{b}{p^k}}+\norm{\frac{a+b}{p^k}}=1$, dove $\norm x$ è l'intero più vicino a $x$.
 \end{esercizio}
 
 \end{document}
