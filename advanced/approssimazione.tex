@@ -63,6 +63,10 @@
     Nella successione $\lfloor n^2\sqrt{2019} \rfloor$ ci sono progressioni geometriche arbitrariamente lunghe.
 \end{esercizio}
 
+\begin{exercise}
+    Dimostare che esiste un $\alpha$ irrazionale tale che $\{ \alpha^n \}$ non è equidistibuita. E $\alpha$ trascendente?
+\end{exercise}
+
 \subsection{Beatty}
 \begin{theorem}
     Siano $r,s$ due irrazionali positivi tali che $\frac1r+\frac1s=1$. Allora le due successioni $\lfloor nr\rfloor$ e $\lfloor ns \rfloor$ partizionano $\N$.
@@ -76,9 +80,21 @@
 
 
 
-
+\newpage
 
 \section{Esercizi singoli}
+
+\begin{esercizio}{Engel}{}
+    Sia $f(n)=\lfloor n+\sqrt n+\frac12 \rfloor$. Mostrare che $f(n)$ manca esattamente i quadrati.
+\end{esercizio}
+
+\begin{esercizio}{AOPS}{https://artofproblemsolving.com/community/c6h1661563p10549146}
+    Siano $\alpha,\beta$ irrazionali tali che $\lfloor \alpha\lfloor \beta x \rfloor \rfloor = \lfloor \beta\lfloor \alpha x \rfloor \rfloor$ per ogni $x>0$. Dimostrare che $\alpha=\beta$.
+\end{esercizio}
+
+\begin{esercizio}{AOPS}{https://artofproblemsolving.com/community/c6h1634940p10278481}
+    Siano $a_1\le\dots\le a_{25}$ interi non negativi. Mostrare che $\lfloor \sqrt{a_1} \rfloor+\dots+\lfloor \sqrt{a_1} \rfloor\ge\left\lfloor \sqrt{a_1+\dots+a_{25}+200a_1} \right\rfloor$
+\end{esercizio}
 
 \begin{esercizio}{IMOSL15 N1}{https://artofproblemsolving.com/community/c6h1268859p6622268}
     Determinare tutti gli $M$ tali che la successione $a_0=M+\frac1 2$, $a_{k+1}=a_k\lfloor a_k\rfloor$ contenga almeno un intero.
@@ -89,15 +105,25 @@
 \end{esercizio}
 
 \begin{esercizio}{PFTB 15.2.3}{}
-    Calcola $\ds\sup_{n\ge1}\left( \min_{p+q=n} |p-q\sqrt3| \right)$
+    Calcolare $\ds\sup_{n\ge1}\left( \min_{p+q=n} |p-q\sqrt3| \right)$
+\end{esercizio}
+
+\begin{esercizio}{PFTB 15.2.7}{}
+    Dimostrare che definitivamente per ogni $n$ esistono degli interi positivi $a,b$ tali che $\lfloor a\sqrt2+b\sqrt{2019} \rfloor=n$.
 \end{esercizio}
 
 \begin{esercizio}{PFTB 15.2.11}{}
-    Siano $a,b$ reali tali che $\{na\}+\{nb\}<1$ per ogni $n$. Dimostra che almeno uno tra $a$ e $b$ è intero.
+    Siano $a,b$ reali tali che $\{na\}+\{nb\}<1$ per ogni $n$. Dimostrare che almeno uno tra $a$ e $b$ è intero.
 \end{esercizio}
 
 \begin{esercizio}{IMOSL14 N8}{https://artofproblemsolving.com/community/c6h1113204p5083578}
     Dimostrare che per ogni $a,b$ interi esiste un $p^k$ dispari tale che $\norm{\frac{a}{p^k}}+\norm{\frac{b}{p^k}}+\norm{\frac{a+b}{p^k}}=1$, dove $\norm x$ è l'intero più vicino a $x$.
 \end{esercizio}
+
+\begin{esercizio}{RMM15 5}{https://artofproblemsolving.com/community/c6h1058252p4575509}
+    Sia $p\ge5$ un numero primo; definiamo $R(k)$ il resto di $k$ nella divisione per $p$. Determinare tutti gli interi $a<p$ tali che $m+R(ma)>a$ per ogni $m=1,\dots,p-1$.
+\end{esercizio}
+
+
 
 \end{document}
